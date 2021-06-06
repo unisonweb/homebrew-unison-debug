@@ -1,4 +1,4 @@
-# Aryairani Unison
+# aryairani/unison
 
 ## How do I install these formulae?
 
