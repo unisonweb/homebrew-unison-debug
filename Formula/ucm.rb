@@ -12,7 +12,7 @@ class Ucm < Formula
   depends_on "ghc@8.10" => :build
   depends_on "haskell-stack" => :build
   depends_on "less"
-  depends_on :ucm-codebase-ui => "1.0.M2f"
+  depends_on "ucm-codebase-ui" => "1.0.M2f"
 
   def install
     system "stack", "build", "--dependencies-only", "--system-ghc"
