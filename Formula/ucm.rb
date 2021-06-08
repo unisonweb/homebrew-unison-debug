@@ -9,6 +9,12 @@ class Ucm < Formula
 
   head "https://github.com/unisonweb/unison.git"
 
+  bottle do
+    root_url "https://github.com/aryairani/homebrew-unison/releases/download/ucm-1.0.M2"
+    sha256 cellar: :any,                 catalina:     "25bec1415f3d9e2fa2841deaa10593a9edfad9086d1179c123dbf0ed9d24223f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d242a9069826ac3650e5414ca19aca0d1295088b8696541d65a44a1a9f75767e"
+  end
+
   depends_on "ghc@8.10" => :build
   depends_on "haskell-stack" => :build
   depends_on "less"
