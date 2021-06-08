@@ -4,7 +4,7 @@ class Ucm < Formula
 
   url "https://github.com/unisonweb/unison/archive/refs/tags/release/M2f.tar.gz"
   version "1.0.M2f"
-  sha256 "b39921cf3205eca2b30b921f85589b9bfa4894c21e32e339b277c2a7497cf1cf"
+  sha256 "c566e7b549a264a8791bd3911e8e2ba2d29de471c056b6678f566c7b3fe8a457"
   license "MIT"
 
   head "https://github.com/unisonweb/unison.git"
