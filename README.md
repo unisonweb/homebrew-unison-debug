@@ -1,10 +1,10 @@
-# aryairani/unison
+# unisonweb/unison-debug
 
 ## How do I install these formulae?
 
-`brew install aryairani/unison/<formula>`
+`brew install unisonweb/unison-debug/<formula>`
 
-Or `brew tap aryairani/unison` and then `brew install <formula>`.
+Or `brew tap unisonweb/unison-debug` and then `brew install <formula>`.
 
 ## Documentation
 
