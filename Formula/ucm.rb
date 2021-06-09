@@ -2,20 +2,12 @@ class Ucm < Formula
   desc "Unison Codebase Manager"
   homepage "https://unisonweb.org"
 
-  url "https://github.com/unisonweb/unison/archive/refs/tags/release/M2f.tar.gz"
-  version "1.0.M2f"
-  sha256 "c566e7b549a264a8791bd3911e8e2ba2d29de471c056b6678f566c7b3fe8a457"
+  url "https://github.com/unisonweb/unison/archive/refs/tags/release/M2g.tar.gz"
+  version "1.0.M2g"
+  sha256 "a4abc27a02aa1bb3552c57079403d6d6c87cddc70767d40be002c7bb61b9b706"
   license "MIT"
 
   head "https://github.com/unisonweb/unison.git"
-
-  bottle do
-    root_url "https://github.com/unisonweb/homebrew-unison-debug/releases/download/ucm-1.0.M2f"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, big_sur:      "5e6e2cedba152dcc17da4e386c3989c6ab54caf5d04824579fa7310f9e3aab9e"
-    sha256 cellar: :any_skip_relocation, catalina:     "d9126e8a3d0b8c69ce647f529b495b33db045d7130ffc44b281583f18df6053a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f26c11d154592b1577dda2e717194a5924d639c93196b1e3db9b63915c4432eb"
-  end
 
   depends_on "ghc@8.10" => :build
   depends_on "haskell-stack" => :build
