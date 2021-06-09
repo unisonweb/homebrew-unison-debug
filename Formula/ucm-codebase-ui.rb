@@ -17,7 +17,7 @@ class UcmCodebaseUi < Formula
   def install
     system "npm", "install", *Language::Node.local_npm_install_args
     system "npm", "run", "build"
-    system "chmod", "-R", "go-x", "*"
+    chmod_R "go-w", prefix
     share.install Dir["dist/ucm/*"]
   end
 
