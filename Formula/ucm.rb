@@ -11,9 +11,10 @@ class Ucm < Formula
 
   bottle do
     root_url "https://github.com/unisonweb/homebrew-unison-debug/releases/download/ucm-1.0.M2f"
-    sha256 cellar: :any_skip_relocation, big_sur:      "75c9998f0d3e4d2687b7dfed927b3aab7f1754279bbd118e7d55de7a2a67e7be"
-    sha256 cellar: :any_skip_relocation, catalina:     "387a78cae5fdefc1f7478312cc362103b43c20a855d310849a67c2927ecb9f39"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b5e2e506e9138fdd4cc5ef9e9d4ba062315af7865e6e265370fc28e314ff83ec"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, big_sur:      "5e6e2cedba152dcc17da4e386c3989c6ab54caf5d04824579fa7310f9e3aab9e"
+    sha256 cellar: :any_skip_relocation, catalina:     "d9126e8a3d0b8c69ce647f529b495b33db045d7130ffc44b281583f18df6053a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f26c11d154592b1577dda2e717194a5924d639c93196b1e3db9b63915c4432eb"
   end
 
   depends_on "ghc@8.10" => :build
