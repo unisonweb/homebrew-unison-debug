@@ -12,16 +12,12 @@ class UcmCodebaseUi < Formula
 
   head "https://github.com/unisonweb/codebase-ui.git"
 
-  bottle do
-    root_url "https://github.com/unisonweb/homebrew-unison-debug/releases/download/ucm-codebase-ui-1.0.M2f"
-    sha256 cellar: :any_skip_relocation, any:      "66b824d36494e529514d7087e18dd2732307a5054e9674908c1234980261f814"
-  end
-
   depends_on "npm" => :build
 
   def install
     system "npm", "install", *Language::Node.local_npm_install_args
     system "npm", "run", "build"
+    system "chmod", "-R", "go-x", "*"
     share.install Dir["dist/ucm/*"]
   end
 

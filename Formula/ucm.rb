@@ -19,10 +19,11 @@ class Ucm < Formula
   depends_on "ghc@8.10" => :build
   depends_on "haskell-stack" => :build
   depends_on "less"
+  depends_on "llvm" => :build
   depends_on "ucm-codebase-ui"
 
   def install
-    system "stack", "build", "--dependencies-only", "--system-ghc"
+    system "stack", "build", "--dependencies-only", "--system-ghc", "--skip-ghc-check"
     system "stack", "install", "--system-ghc",
                     "--local-bin-path", "dist",
                     "--flag", "unison-parser-typechecker:optimized",
